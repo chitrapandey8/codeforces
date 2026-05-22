@@ -1,0 +1,1 @@
+{"name":"Local: LuckyDivision","url":"d:\\CodeForces\\Day3\\LuckyDivision.cpp","tests":[{"id":1777957427835,"input":"47\n16\n78","output":"YES\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CodeForces\\Day3\\LuckyDivision.cpp","group":"local","local":true}
