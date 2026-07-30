@@ -134,18 +134,38 @@
 // }
 
 
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+//     int n, k, l, c, d, p, nl, np; cin>>n>>k>>l>>c>>d>>p>>nl>>np;
+//     int nooftoasticanmakeiml = k*l/nl;
+//     int toastperlime = c*d;
+//     int toastperslat = p/np;
+    
+//     int minn = min({nooftoasticanmakeiml, toastperlime, toastperslat});
+//     int ans = minn/n;
+//     cout<<ans<<endl;
+ 
+//     return 0;
+// }
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int n, k, l, c, d, p, nl, np; cin>>n>>k>>l>>c>>d>>p>>nl>>np;
-    int nooftoasticanmakeiml = k*l/nl;
-    int toastperlime = c*d;
-    int toastperslat = p/np;
-    
-    int minn = min({nooftoasticanmakeiml, toastperlime, toastperslat});
-    int ans = minn/n;
-    cout<<ans<<endl;
- 
+    int n; cin>>n;
+    while(n--){
+        int a; cin>>a;
+        if(a>=1900){
+            cout<<"Division 1"<<endl;  
+        }else if(a >= 1600 && a<= 1899){
+           cout<<"Division 2"<<endl;
+        }else if(a >= 1400 && a<= 1599){
+            cout<<"Division 3"<<endl;
+        }else{
+            cout<<"Division 4"<<endl;
+        }
+    }
     return 0;
 }
