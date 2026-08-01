@@ -61,20 +61,47 @@
 //     return 0;
 // }
 
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+//     int a, b; cin>>a>>b;
+//     int socks = min(a,b);
+//     a = a-socks;
+//     b = b-socks;
+//     cout<<socks<<" ";
+//     if(a != 0){
+//         cout<<a/2<<endl;
+//     }else{
+//         cout<<b/2<<endl;
+//     }
+
+//     return 0;
+// }
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int a, b; cin>>a>>b;
-    int socks = min(a,b);
-    a = a-socks;
-    b = b-socks;
-    cout<<socks<<" ";
-    if(a != 0){
-        cout<<a/2<<endl;
-    }else{
-        cout<<b/2<<endl;
+    int t; cin>>t;
+    while(t--){
+        int a, b, c; cin>>a>>b>>c;
+        if(a == b && c%2 == 0){
+         cout<<"Second"<<endl;
+         continue;
+        }else if(a == b && c%2 == 1){
+            cout<<"First"<<endl;
+            continue;
+        }
+           if(a > b+c){
+            cout<<"First"<<endl;
+            continue;
+        }else if (a+c < b+c)
+        {
+            cout<<"Second"<<endl;
+            continue;
+        }
+        
     }
-
     return 0;
 }
